@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<photos>
+	<photo id="photo1" title="Photo 1" relurl="img/photo1.png" />
+	<photo id="photo2" title="Photo 2" relurl="img/photo2.png" />
+	<photo id="photo3" title="Photo 3" relurl="img/photo3.png" />
+	<photo id="photo4" title="Photo 4" relurl="img/photo4.png" />
+	<photo id="photo5" title="Photo 5" relurl="img/photo5.png" />
+	<photo id="photo6" title="Photo 6" relurl="img/photo6.png" />
+</photos>

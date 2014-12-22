@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="CCRPhotoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ae9-6X-l4w">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="7xl-AD-svZ"/>
+                            <constraint firstAttribute="width" secondItem="ae9-6X-l4w" secondAttribute="height" multiplier="1:1" id="GJs-zh-KmH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lf-AB-464">
+                        <rect key="frame" x="150" y="39" width="79" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="8xk-Ps-pUk">
+                        <rect key="frame" x="40" y="40" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5lf-AB-464" firstAttribute="leading" secondItem="ae9-6X-l4w" secondAttribute="trailing" constant="60" id="A3y-b4-5BZ"/>
+                    <constraint firstItem="ae9-6X-l4w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="FFJ-mc-bY4"/>
+                    <constraint firstItem="8xk-Ps-pUk" firstAttribute="centerX" secondItem="ae9-6X-l4w" secondAttribute="centerX" id="Z2b-9M-Ady"/>
+                    <constraint firstAttribute="bottom" secondItem="ae9-6X-l4w" secondAttribute="bottom" constant="9" id="gyv-nL-2xy"/>
+                    <constraint firstItem="8xk-Ps-pUk" firstAttribute="centerY" secondItem="ae9-6X-l4w" secondAttribute="centerY" id="j7p-2V-Q7w"/>
+                    <constraint firstItem="ae9-6X-l4w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="laA-NY-TnC"/>
+                    <constraint firstItem="ae9-6X-l4w" firstAttribute="centerY" secondItem="5lf-AB-464" secondAttribute="centerY" constant="0.5" id="v1e-Wx-IUD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="loadingIndicator" destination="8xk-Ps-pUk" id="EC4-p8-Yg4"/>
+                <outlet property="thumbnail" destination="ae9-6X-l4w" id="ZiE-mz-aRG"/>
+                <outlet property="title" destination="5lf-AB-464" id="EG1-9H-Je2"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
